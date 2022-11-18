@@ -16,3 +16,13 @@ list_of_songs = [time for x in my_favorite_songs for time in x]
 list_of_songs = list_of_songs[1::2]
 time_of_three_songs = choices(list_of_songs, k=3)
 print(round(sum(time_of_three_songs), 2))
+
+# Можно использовать и sample.
+# Тогда выводится будут только уникальные
+# Решение 2
+time = 0
+for song in sample(my_favorite_songs, 3):
+    print(song[0])
+    time += song[1]
+
+print(f'Три песни звучат {round(time, 2)}')
