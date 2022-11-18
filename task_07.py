@@ -26,3 +26,5 @@ for key, elem in titles.items():
         total_price +=  sales[goods_code][i]['quantity'] * sales[goods_code][i]['price']
 
     print(f'{goods_name}: общее количество {total_quantity}, общая стоимость {total_price} - руб.')
+
+#     Отлично
