@@ -17,3 +17,5 @@ for key, value in items[0:3]:
     names_of_songs += key
     sum_of_times += float(value)
 print('Три песни', names_of_songs, 'звучат:', round(sum_of_times, 2), 'минут')
+
+# Хорошо. Через shuffle тоже хорошо!
